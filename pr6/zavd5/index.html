@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zavd4</title>
+
+</head>
+<body>
+    <header>
+        <a href="/practice/index.html" style="text-decoration:none; color: black; padding: 4px;border: 1px solid black;">Повернутись на головну</a>
+    </header>
+    <h1>Обчислення</h1>
+    <form name="calculation-form" onsubmit="return calculate()">
+        <label for="num1">Число 1:</label><br>
+        <input type="text" id="num1" name="num1"><br><br>
+
+        <label for="num2">Число 2:</label><br>
+        <input type="text" id="num2" name="num2"><br><br>
+
+        <label for="operation">Операція:</label><br>
+        <select name="operation">
+            <option value="add">Додавання</option>
+            <option value="subtract">Віднімання</option>
+            <option value="multiply">Множення</option>
+            <option value="divide">Ділення</option>
+            <option value="power">Піднесення до степеню</option>
+            <option value="root">Корінь</option>
+        </select><br><br>
+
+        <input type="submit" value="Обчислити"><br><br>
+
+        <label for="result">Результат:</label><br>
+        <input type="text" id="result" name="result" readonly><br><br>
+    </form>
+
+    <script>
+              function calculate() {
+            var num1 = parseFloat(document.forms["calculation-form"]["num1"].value);
+            var num2 = parseFloat(document.forms["calculation-form"]["num2"].value);
+            var operation = document.forms["calculation-form"]["operation"].value;
+            var result;
+
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("Будь ласка, введіть два числа");
+                return false;
+            }
+
+            switch (operation) {
+                case "add":
+                    result = num1 + num2;
+                    break;
+                case "subtract":
+                    result = num1 - num2;
+                    break;
+                case "multiply":
+                    result = num1 * num2;
+                    break;
+                case "divide":
+                    result = num1 / num2;
+                    break;
+                case "power":
+                    result = Math.pow(num1, num2);
+                    break;
+                case "root":
+                    result = Math.pow(num1, 1 / num2);
+                    break;
+            }
+
+            document.forms["calculation-form"]["result"].value = result;
+
+            return false;
+        }
+    </script> 
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zavd1</title>
+</head>
+<body>
+    <header>
+        <a href="/practice/index.html" style="text-decoration:none; color: black; padding: 4px;border: 1px solid black;">Повернутись на головну</a>
+    </header>
+    <h1>Кольори фону</h1>
+    
+    <label for="colorSelect">Виберіть колір:</label>
+    <select id="colorSelect" onchange="changeBackground()">
+        <option value="red">Червоний</option>
+        <option value="gray">Сірий</option>
+        <option value="brown">Коричневий</option>
+    </select>
+
+    <script>
+         function changeBackground() {
+            var color = document.getElementById("colorSelect").value;
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>

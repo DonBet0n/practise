@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zavd2</title>
+
+    <style>
+        body{
+            font-size: 30px;
+        }
+        table {
+            border: 1px solid black;
+        }
+        
+        td {
+            border: 1px solid black;
+           padding: 5px;
+        }
+
+        button {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/practice/index.html" style="text-decoration:none; color: black; padding: 4px;border: 1px solid black;">Повернутись на головну</a>
+    </header>
+    
+    <h1>Тестування</h1>
+    <p>Перевірка знання таблиці істинності логічного елемента АБО-НЕ</p>
+
+    <table>
+        <tr>
+          <th colspan="2">Логічний елемент АБО-НЕ</th>
+        </tr>
+
+        <tr>
+          <td>Логічний вираз</td>
+          <td colspan="2">Можливі відповіді</td>
+          
+        </tr>
+
+        <tr>
+          <td>0 V 0</td>
+            <td><button onclick="func(true,0,0)">1</button></td>
+            <td><button onclick="func(false,0,0)">0</button></td>
+        </tr>
+
+        <tr>
+            <td>0 V 1</td>
+            <td><button onclick="func(true,0,1)">1</button></td>
+            <td><button onclick="func(false,0,1)">0</button></td>
+          </tr>
+
+          <tr>
+            <td>1 V 0</td>
+            <td><button onclick="func(true,1,0)">1</button></td>
+            <td><button onclick="func(false,1,0)">0</button></td>
+          </tr>
+
+          <tr>
+            <td>1 V 1</td>
+            <td><button onclick="func(true,1,1)">1</button></td>
+            <td><button onclick="func(false,1,1)">0</button></td>
+          </tr>
+
+      </table>
+
+
+    <script>
+        function func(tf,a,b) {
+            var input1 = a;
+            var input2 = b;
+            var result = !(input1 || input2);
+            if (tf == result) {
+                alert("Результат: Вірно");
+            }
+            else {
+                alert("Результат: Хибно");
+            }
+        }
+    </script>   
+</body>
+</html>

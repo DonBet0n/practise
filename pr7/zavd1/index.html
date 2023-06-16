@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт візитка Ярослава Костушевича</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header style="padding: 10px;">
+        <a href="/practice/index.html" style="text-decoration:none; color: black; padding: 4px;border: 1px solid black;">Повернутись на головну</a>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ярослав Костушевич</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Перемкнути навігацію">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">Про мене</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="about" class="container py-4">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="Screenshot 2022-09-08 223625.png" alt="Фото Ярослава Костушевича" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-md-8">
+                <h1>Ярослав Костушевич</h1>
+                <p>Програміст з Хмельницького, який спеціалізується на розробці веб-сайтів та додатків. Маю досвід роботи з такими технологіями, як HTML, CSS, JavaScript, Bootstrap, PHP та іншими.</p>
+                <p>Моїми хобі є читання книг, гра на гітарі, подорожі та спорт.</p>
+                <p>Я відкритий до нових можливостей та співпраці. Якщо вам потрібна якісна розробка веб-проекту, зв'яжіться зі мною за допомогою форми нижче.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="container py-4">
+        <h2>Зв'яжіться зі мною</h2>
+        <p>Ви можете надіслати мені повідомлення за допомогою цієї форми. Я вам відповім якнайшвидше.</p>
+
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Ваше ім'я</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Введіть ваше ім'я" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Ваш email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Введіть ваш email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Ваше повідомлення</label>
+                <textarea id="message" name="message" class="form-control" placeholder="Введіть ваше повідомлення" rows="5" required></textarea>
+            </div>
+    
+            <button type="submit" class="btn btn-primary">Надіслати</button>
+        </form>
+    </div>
+  
+</body>
+</html>

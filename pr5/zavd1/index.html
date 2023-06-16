@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zavd1</title>
+</head>
+<body>
+    <header style="padding: 10px;">
+        <a href="/practice/index.html" style="text-decoration:none; color: black; padding: 4px;border: 1px solid black;">Повернутись на головну</a>
+    </header>
+    <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+        var name = prompt('Input name','');
+        var position = prompt('Input position','');
+        var phone = prompt('Input phone','');
+        var visitcard = ' <TABLE width="100%" border="0">'
+        +' <TR>'
+        +' <TD align="CENTER" valign="CENTER">'
+        +' <IMG src="Screenshot 2022-09-08 223625.png" width = "75px" height = "100px">'
+        +' </TD>'
+        +' <TD align="CENTER">'
+        +' <B>' + name + '</B><BR>'
+        +' <I>' + position + '</I><BR>'
+        +' <FONT color="blue">' + phone + '</FONT>'
+        +' </TD>'
+        +' </TR>'
+        +' </TABLE>';
+        document.write('<TABLE width="100%" border="0" align="CENTER">');
+        for(var y=0; y<12; y++)
+        {
+        document.write('<TR>');
+        for(var x=0; x<3; x++)
+        {
+        document.write( '<TD align="CENTER" style="border-style: dashed; borderwidth:thin;">');
+        document.write( visitcard );
+        document.write('</TD>');
+        }
+        document.write('</TR>');
+        }
+        document.write('</TABLE>'); 
+         </SCRIPT> 
+</body>
+</html>

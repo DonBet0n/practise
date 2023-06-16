@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zavd3</title>
+
+</head>
+<body>
+    <header>
+        <a href="/practice/index.html" style="text-decoration:none; color: black; padding: 4px;border: 1px solid black;">Повернутись на головну</a>
+    </header>
+   <h1>Тестування</h1>
+    <form id="test-form">
+        <p>Скільки хвилин у годині?</p>
+        <select id="answer">
+            <option value="30">30</option>
+            <option value="60">60</option>
+            <option value="90">90</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Відповісти">
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        document.getElementById("test-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var answer = document.getElementById("answer").value;
+            var result = document.getElementById("result");
+            if (answer === "60") {
+                result.innerHTML = "Вірно!";
+            } else {
+                result.innerHTML = "Невірно!";
+            }
+        });
+    </script> 
+</body>
+</html>

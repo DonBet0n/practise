@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zavd3</title>
+
+    
+
+</head>
+<body>
+    <header>
+        <a href="/practice/index.html" style="text-decoration:none; color: black; padding: 4px; border: 1px solid black;">Повернутись на головну</a>
+    </header>
+
+    <h1>Математичні функції й константи</h1>
+    <h2>Константи:</h2>
+    <ul>
+        <li>Значення константи е = 2.718281828459045</li>
+        <li>Значення константи π = 3.141592653589793</li>
+        <li>Десятковий логарифм постійної Ейлера (е) = 0.4342944819032518</li>
+        <li>Двійковий логарифм постійної Ейлера (е) = 1.4426950408889634</li>
+        <li>Натуральний логарифм числа 10 = 2.302585092994046</li>
+        <li>Натуральний логарифм числа 2 = 0.6931471805599453</li>
+        <li>Корінь квадратний із двох = 1.4142135623730951</li>
+        <li>Корінь квадратний з однієї другої = 0.7071067811865476</li>
+    </ul>
+
+    <h2>Функції:</h2>
+    <ul id="functions">
+        <li id="function13"></li>
+        <li id="function14"></li>
+        <li id="function15"></li>
+        <li id="function16"></li>
+        <li id="function17"></li>
+    </ul>
+
+    <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+        document.getElementById("function13").textContent = `Результат зведення е в степінь 2: ${Math.exp(2)}`;
+        document.getElementById("function14").textContent = `Натуральний логарифм від e^2 : ${Math.log(Math.E * Math.E)}`;
+        document.getElementById("function15").textContent = `Результат обчислення десяткового логарифма від числа 100: ${Math.log10(100)}`;
+        document.getElementById("function16").textContent = `Результат обчислення двійкового логарифма від числа 8: ${Math.log2(8)}`;
+        document.getElementById("function17").textContent = `Тангенс 45 градусів (з округленням): ${Math.round(Math.tan(Math.PI/4))}`;
+</SCRIPT> 
+
+</body>
+</html>

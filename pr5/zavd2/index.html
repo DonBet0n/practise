@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zavd2</title>
+
+    <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+        function showQuote(author) {
+            var quotes = 
+                {
+                    "Л. Костенко": "Нації вмирають не від інфаркту. Спочатку їм відбирає",
+                    "Т. Шевченко": "Нема на світі України, немає другого Дніпра",
+                    "П. Чубинський": "Ще не вмерла України і слава, і воля.",
+                    "Л. Толстой": "Я дуже люблю народну українсь-ку мову, звучну, барвисту й таку м'я-ку.",
+                    "В. Голобородько": "Мова вмирає, коли наступне покоління втрачає розуміння значення слів.",
+                };
+                    var quote = quotes[author];
+                    alert(quote);
+        }
+    </SCRIPT> 
+
+</head>
+<body>
+    <header>
+        <a href="/practice/index.html" style="text-decoration:none; color: black; padding: 4px; border: 1px solid black;">Повернутись на головну</a>
+    </header>
+        <h1>Вислови українських письменників</h1>
+            <button onclick="showQuote('Л. Костенко')">Л. Костенко</button>
+            <button onclick="showQuote('Т. Шевченко')">Т. Шевченко</button>
+            <button onclick="showQuote('П. Чубинський')">П. Чубинський</button>
+            <button onclick="showQuote('Л. Толстой')">Л. Толстой</button>
+            <button onclick="showQuote('В. Голобородько')">В. Голобородько</button>
+</body>
+</html>

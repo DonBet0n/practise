@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zavd4</title>
+
+</head>
+<body>
+    <header>
+        <a href="/practice/index.html" style="text-decoration:none; color: black; padding: 4px;border: 1px solid black;">Повернутись на головну</a>
+    </header>
+    <h1>Реєстрація</h1>
+    <form name="registration-form" onsubmit="return validateForm()">
+        <label for="username">Ім'я користувача:</label><br>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="first-name">Ім'я:</label><br>
+        <input type="text" id="first-name" name="first-name"><br><br>
+
+        <label for="last-name">Прізвище:</label><br>
+        <input type="text" id="last-name" name="last-name"><br><br>
+
+        <input type="submit" value="Зареєструватися">
+    </form>
+
+    <script>
+          function validateForm() {
+            var username = document.forms["registration-form"]["username"].value;
+            var password = document.forms["registration-form"]["password"].value;
+            var email = document.forms["registration-form"]["email"].value;
+            var firstName = document.forms["registration-form"]["first-name"].value;
+            var lastName = document.forms["registration-form"]["last-name"].value;
+
+            if (username === "" || password === "" || email === "" || firstName === "" || lastName === "") {
+                alert("Всі поля повинні бути заповнені");
+                return false;
+            }
+
+            if (password.length < 8) {
+                alert("Пароль повинен містити не менше 8 символів");
+                return false;
+            }
+            alert("Ім'я користувача: " + username + "\nПароль: " + password + "\nEmail: " + email + "\nІм'я: " + firstName + "\nПрізвище: " + lastName);
+
+            return true;
+        }
+    </script> 
+</body>
+</html>

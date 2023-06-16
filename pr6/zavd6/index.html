@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zavd4</title>
+
+</head>
+<body>
+    <header>
+        <a href="/practice/index.html" style="text-decoration:none; color: black; padding: 4px;border: 1px solid black;">Повернутись на головну</a>
+    </header>
+    <H1 align=center>Поштова форма</H1>
+    <FORM NAME="mailer" METHOD="post" ACTION="" ENCTYPE= "text/plain" onSubmit="(document.mailer.action += mailtoandSubject)">
+        <table border=2 align=center cellspacing=1 cellpadding=2 BgColor=#FFFFE0>
+            <tr>
+                <td><FONT size="2" color="#0000CD">Ім'я:</font></td>
+                <td><INPUT TYPE="text" NAME="Name" size="24" onChange="msg(this.form)"></td>
+            </tr>
+
+            <tr>
+                <td><FONT size="2" color="#0000CD">Тема:</font></td>
+                <td><INPUT TYPE="text" NAME="Subject" size="24" onChange="msg(this.form)"></td>
+            </tr>
+            <tr>
+                <td><FONT size="2" color="#0000CD">Повідомлення:</font></td>
+                <td><TEXTAREA NAME="Message" COLS=40 ROWS=6 onChange="msg(this.form)"></TEXTAREA></td>
+            </tr>
+            <tr>
+                <td colspan=2 align=center><INPUT TYPE = "submit" VALUE = "Відправити" ONCLICK="return checkIt()">
+                <INPUT TYPE=reset VALUE=" Очистити "></td>
+        </tr>
+        </table>
+    </FORM>
+    
+    <SCRIPT LANGUAGE="JavaScript">
+    function checkIt() {
+        if (document.forms.mailer.Name.value != "") {
+        } else {
+            alert("\nОбласть \"Ім'я\" у формі. \n\Будь ласка, введіть своє ім'я.");
+            document.forms.mailer.Name.focus();
+            return false;
+        }
+        if (document.forms.mailer.Subject.value != "") {
+        } else {
+            alert("\nОбласть \"Тема\" в формі. \n\Будь ласка, введіть, введите те-му.");
+            document.forms.mailer.Subject.focus();
+            return false;
+        }
+        if (document.forms.mailer.Message.value != "") {
+            return true;
+        } else {
+            alert("\nОбласть \"Повідомлення\" в формі. \n\nБудь ласка, напишіть повідомлення.");
+            document.forms.mailer.Message.focus();
+            return false;
+        }
+    }
+    function msg() {
+        document.mailer.action = "mailto:astra1990@meta.ua"
+        mailtoandSubject = (('?Subject=' + document.mailer.Subject.value) + '&Body=' + document.mailer.Message.value);
+    }
+    </SCRIPT>
+</body>
+</html>

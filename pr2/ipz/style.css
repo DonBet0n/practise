@@ -1,0 +1,13 @@
+table{
+    padding: 1rem;
+}
+.row{
+    font-family: "Montserratggit", sans-serif;
+}
+th{
+    padding: 0 1rem 0.5rem 0 0;
+}
+caption{
+    font-size: 20px;
+    font-weight: 700;
+}
