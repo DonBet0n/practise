@@ -6,11 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zavd4</title>
 
+    <style> 
+        body { 
+            background-color: rgb(50, 50, 50); 
+            color: white; 
+            font-family: Arial, sans-serif; 
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
     
+        header a {
+            text-decoration: none;
+            color: white;
+            border: 2px solid white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    
+        h1 {
+            text-align: center;
+        }
+    
+        div {
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+    </style>
 </head>
 <body onload="calculate()">
     <header>
-        <a href="/practise/index.html" style="text-decoration:none; color: black; padding: 4px; border: 1px solid black;">Повернутись на головну</a>
+        <a href="/practise/index.html">Повернутись на головну</a>
     </header>
     <h1>Розгалужений обчислювальний процес</h1>
     <div id="result"></div>

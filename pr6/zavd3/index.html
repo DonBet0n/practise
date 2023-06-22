@@ -5,11 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zavd3</title>
+    <style> 
+        body { 
+            background-color: rgb(50, 50, 50); 
+            color: white; 
+            font-family: Arial, sans-serif; 
+        }
 
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+    
+        header a {
+            text-decoration: none;
+            color: white;
+            border: 2px solid white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    
+        h1 {
+            text-align: center;
+        }
+    
+        form {
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+    
+        select {
+            width: 100px;
+            height: 30px;
+        }
+    
+        input {
+            width: 100px;
+            height: 30px;
+            background-color: rgb(100, 100, 100);
+            color: white;
+            border: none;
+            border-radius: 10px;
+        }
+    
+        input:hover {
+            background-color: rgb(150, 150, 150);
+        }
+    
+        div {
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+        #result{
+            padding: 10px;
+            width: 70px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <a href="/practise/index.html" style="text-decoration:none; color: black; padding: 4px;border: 1px solid black;">Повернутись на головну</a>
+        <a href="/practise/index.html">Повернутись на головну</a>
     </header>
    <h1>Тестування</h1>
     <form id="test-form">
@@ -32,8 +89,10 @@
             var result = document.getElementById("result");
             if (answer === "60") {
                 result.innerHTML = "Вірно!";
+                result.style.backgroundColor = "green"; 
             } else {
                 result.innerHTML = "Невірно!";
+                result.style.backgroundColor = "red"; 
             }
         });
     </script> 

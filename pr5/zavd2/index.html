@@ -5,6 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zavd2</title>
+    <style>
+    body { 
+        background-color: rgb(50, 50, 50);
+        color: white; 
+        font-family: Arial, sans-serif; }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+    
+        header a {
+            text-decoration: none;
+            color: white;
+            border: 2px solid white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    
+        h1 {
+            text-align: center;
+        }
+    
+        button {
+            display: block;
+            margin: 10px auto;
+            width: 200px;
+            height: 40px;
+            background-color: rgb(100, 100, 100);
+            color: white;
+            border: none;
+            border-radius: 10px;
+        }
+    
+        button:hover {
+            background-color: rgb(150, 150, 150);
+        }
+    </style>
 
     <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
         function showQuote(author) {
@@ -24,7 +64,7 @@
 </head>
 <body>
     <header>
-        <a href="/practise/index.html" style="text-decoration:none; color: black; padding: 4px; border: 1px solid black;">Повернутись на головну</a>
+        <a href="/practise/index.html"">Повернутись на головну</a>
     </header>
         <h1>Вислови українських письменників</h1>
             <button onclick="showQuote('Л. Костенко')">Л. Костенко</button>

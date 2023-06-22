@@ -4,12 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zavd4</title>
+    <title>Zavd5</title>
+    <style> 
+        body { 
+            background-color: rgb(50, 50, 50); 
+            color: white; 
+            font-family: Arial, sans-serif; 
+        }
 
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+    
+        header a {
+            text-decoration: none;
+            color: white;
+            border: 2px solid white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    
+        h1 {
+            text-align: center;
+        }
+    
+        form {
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+    
+        label {
+            display: block;
+        }
+    
+        input {
+            display: block;
+            width: 200px;
+            height: 30px;
+            margin-bottom: 10px;
+        }
+    
+        input[type="submit"] {
+            background-color: rgb(100, 100, 100);
+            color: white;
+            border: none;
+            border-radius: 10px;
+        }
+    
+        input[type="submit"]:hover {
+            background-color: rgb(150, 150, 150);
+        }
+        select {
+        display: block;
+        width: 200px;
+        height: 30px;
+        margin-bottom: 10px;
+        background-color: rgb(100, 100, 100);
+        color: white;
+        border: none;
+    }
+
+    select:hover {
+        background-color: rgb(150, 150, 150);
+    }
+
+    </style>
 </head>
 <body>
     <header>
-        <a href="/practise/index.html" style="text-decoration:none; color: black; padding: 4px;border: 1px solid black;">Повернутись на головну</a>
+        <a href="/practise/index.html">Повернутись на головну</a>
     </header>
     <h1>Обчислення</h1>
     <form name="calculation-form" onsubmit="return calculate()">
