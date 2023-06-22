@@ -5,26 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zavd4</title>
-
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgb(0, 0, 0);
+            padding: 10px;
+        }
+        a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        main {
+            background-color: rgb(230, 230, 230);
+            padding: 20px;
+        }
+        table {
+            background-color: rgb(255, 255, 255);
+            border-collapse: collapse;
+            margin: auto;
+            width: 80%;
+        }
+        table, td {
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 0; 
+            padding: 10px; 
+        }
+        td:first-child {
+            color: rgb(128, 128, 128);
+        }
+        input, textarea {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255); 
+            border: 1px solid rgb(0, 0, 0); 
+            border-radius: 0; 
+            padding: 15px; 
+        }
+        input:focus, textarea:focus {
+            box-shadow: inset 2px 2px 4px rgb(192, 192, 192);
+            outline: none;
+        }
+        input[type=submit], input[type=reset] {
+            color: rgb(0, 0, 0);
+            background-color: rgb(192, 192, 192); 
+            border: 1px solid rgb(0, 0, 0); 
+            border-radius: 0; 
+        }
+        input[type=submit]:hover, input[type=reset]:hover {
+            background-color: rgb(217, 217, 217); 
+            outline: none;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <a href="/practise/index.html" style="text-decoration:none; color: black; padding: 4px;border: 1px solid black;">Повернутись на головну</a>
+        <a href="/practise/index.html">Повернутись на головну</a>
     </header>
+    <main>
     <H1 align=center>Поштова форма</H1>
     <FORM NAME="mailer" METHOD="post" ACTION="" ENCTYPE= "text/plain" onSubmit="(document.mailer.action += mailtoandSubject)">
-        <table border=2 align=center cellspacing=1 cellpadding=2 BgColor=#FFFFE0>
+        <table>
             <tr>
-                <td><FONT size="2" color="#0000CD">Ім'я:</font></td>
+                <td>Ім'я:</td>
                 <td><INPUT TYPE="text" NAME="Name" size="24" onChange="msg(this.form)"></td>
             </tr>
 
             <tr>
-                <td><FONT size="2" color="#0000CD">Тема:</font></td>
+                <td>Тема:</td>
                 <td><INPUT TYPE="text" NAME="Subject" size="24" onChange="msg(this.form)"></td>
             </tr>
             <tr>
-                <td><FONT size="2" color="#0000CD">Повідомлення:</font></td>
+                <td>Повідомлення:</td>
                 <td><TEXTAREA NAME="Message" COLS=40 ROWS=6 onChange="msg(this.form)"></TEXTAREA></td>
             </tr>
             <tr>
